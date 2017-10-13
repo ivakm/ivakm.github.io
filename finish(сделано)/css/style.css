@@ -1,0 +1,1359 @@
+@import url(reset.css);
+
+@font-face {
+	font-family: 'Helvetica';
+	src: url(../fonts/HelveticaRegular.ttf);
+}
+
+body {
+	font-family: 'Roboto';
+}
+
+.width1120 {
+	max-width: 1120px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.breacCrumb {
+	width: 970px;
+	float: right;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.breacCrumb li {
+	float: left;
+	color: #b9b9b9;
+	font-family: 'Roboto';
+	line-height: 20px;
+	font-size: 14px;
+}
+
+.breacCrumb li a {
+	border-right: 1px solid #777777;
+	margin-right: 5px;
+	padding-right: 5px;
+	color: #777777;
+}
+
+.breacCrumb li:first-child {
+	margin-left: 16px;
+}
+
+.burger {
+	display: none;
+}
+
+.topMenu {
+	height: 40px;
+	margin: 0 auto;
+}
+
+.topLogo {
+	width: 122px;
+	height: 40px;
+	float: left;
+}
+
+.topMenuList {
+	border-bottom: 1px solid #ebebeb;
+	position: relative;
+	float: right;
+	padding-right: 16px;
+	width: 715px;
+	-webkit-transition: all 0.5s linear 0.1s;
+	-moz-transition: all 0.5s linear 0.1s;
+	-ms-transition: all 0.5s linear 0.1s;
+	-o-transition: all 0.5s linear 0.1s;
+	transition: all 0.5s linear 0.1s;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: linear-gradient(to top, #FFFFFF, #ebebeb);
+}
+
+.topMenuList li {
+	float: left;
+}
+
+.topMenuList li a {
+	position: relative;
+	padding: 0 6px;
+	color: #555555;
+	line-height: 39px;
+	font-family: 'roboto';
+	display: block;
+	font-size: 13px;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	z-index: 5;
+}
+
+.topMenuList li a:hover {
+	color: #000;
+}
+
+.topMenuList li a:hover .helper {
+	opacity: 1;
+}
+
+.topMenuList li:first-child a {
+	padding-left: 16px;
+}
+
+.topMenuList li:first-child a span::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 40px solid transparent;
+	border-left: 10px solid #FFFFFF;
+	border-top: 0px solid #FFFFFF;
+}
+
+.topMenuList:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 40px solid transparent;
+	border-left: 10px solid #FFFFFF;
+	border-top: 0px solid #FFFFFF;
+}
+
+.topMenuList:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: 40px solid transparent;
+	border-right: 10px solid #555555;
+	border-bottom: 0px solid #555555;
+}
+
+.helper {
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	transition: opacity 0.5s linear;
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, #FFFFFF, #ebebeb);
+	opacity: 0;
+}
+
+.searchBox {
+	float: right;
+	height: 40px;
+	width: 255px;
+	background: #555555;
+}
+
+.searchBox form {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.searchBox form input[type='text'] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 20px;
+	color: #b9b9b9;
+	font-style: italic;
+	width: 70%;
+	height: 100%;
+	border: none;
+	background: transparent;
+}
+
+.searchBox form input[type='text']::-webkit-input-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+.searchBox form input[type='text']::-moz-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+.searchBox form input[type='text']:-moz-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+.searchBox form input[type='text']:-ms-input-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+.searchBox form input[type='text']:focus::-webkit-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.searchBox form input[type='text']:focus::-moz-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.searchBox form input[type='text']:focus:-moz-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.searchBox form input[type='text']:focus:-ms-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.searchBox form submit {
+	margin-left: 5%;
+	cursor: pointer;
+}
+
+.searchBox form submit i {
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-ms-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	transition: color 0.5s;
+	font-size: 14px;
+	color: #b9b9b9;
+}
+
+.searchBox form submit:hover i {
+	color: #ffcc4e;
+}
+
+.searchBox form a {
+	width: 10%;
+	display: inline-block;
+	margin-left: 15px;
+	font-style: italic;
+	color: #fff;
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-ms-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+.searchBox form a:hover {
+	color: #ffcc4e;
+}
+
+footer {
+	height: 120px;
+	background: #333333;
+}
+
+.footerMid {
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+.footerLogo a {
+	float: left;
+}
+
+.Right {
+	padding-left: 29px;
+	margin-left: 28px;
+	float: left;
+	line-height: 40px;
+	color: #777777;
+	border-left: 1px solid #777777;
+}
+
+.content.index {
+	margin-top: 40px;
+}
+
+.content {
+	margin-top: 20px;
+}
+
+.leftSideBar {
+	width: 265px;
+	float: left;
+}
+
+.rightSideBar {
+	width: 265px;
+	float: right;
+}
+
+.centerSideBar {
+	margin-left: 20px;
+	width: 550px;
+	float: left;
+}
+
+.centerSideBar h1 {
+	font-family: 'Roboto';
+	font-size: 27px;
+	line-height: 30px;
+	color: #777777;
+	margin-bottom: 10px;
+}
+
+.leftCenterSideBar {
+	width: 835px;
+	float: left;
+}
+
+.leftCenterSideBar h1 {
+	font-size: 28px;
+	color: #777777;
+	margin-bottom: 20px;
+	font-family: 'Roboto';
+}
+
+.actions > a, .pokerRooms > a, .contentNews > a {
+	color: #739a36;
+	font-size: 14px;
+	margin-top: 30px;
+	display: block;
+	text-align: right;
+	transition: color, 0.5s, linear, 0s;
+	-webkit-transition: color, 0.5s, linear, 0s;
+	-o-transition: color, 0.5s, linear, 0s;
+}
+
+.actions > a:hover, .pokerRooms > a:hover, .contentNews > a:hover {
+	color: #508104;
+}
+
+a.aboutPokerRoom {
+	color: #739a36;
+	font-size: 14px;
+	margin-top: 30px;
+	display: block;
+	text-align: center;
+	transition: color, 0.5s, linear, 0s;
+	-webkit-transition: color, 0.5s, linear, 0s;
+	-o-transition: color, 0.5s, linear, 0s;
+}
+
+a.aboutPokerRoom:hover {
+	color: #508104;
+}
+
+.article {
+	position: relative;
+	padding: 0 20px;
+	height: 30px;
+	background: #ffcc4e;
+	line-height: 30px;
+	display: inline-block;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+.article:before {
+	content: '';
+	position: absolute;
+	right: -40px;
+	top: 0;
+	border: 30px solid transparent;
+	border-left: 10px solid #ffcc4e;
+	border-top: 0px solid #ffcc4e;
+}
+
+.action {
+	display: block;
+	margin-top: 10px;
+	width: 265px;
+	height: 60px;
+	background: linear-gradient(to bottom, #555555 50%, #000000);
+	transition: all, 0.5s, linear, 0s;
+	-webkit-transition: all, 0.5s, linear, 0s;
+	-o-transition: all, 0.5s, linear, 0s;
+}
+
+.action img {
+	float: left;
+}
+
+.action span {
+	margin-left: 20px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 60px;
+}
+
+.action:hover {
+	background: linear-gradient(to top, #739a36 50%, #508104);
+	text-align: center;
+}
+
+.action:hover img {
+	display: none;
+}
+
+.pokerRoomsContent {
+	margin-bottom: 50px;
+}
+
+.pokerRoom {
+	display: block;
+	margin-top: 10px;
+	width: 265px;
+	height: 80px;
+	border: 1px solid #ebebeb;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: linear-gradient(to bottom, #FFFFFF 50%, #ebebeb);
+}
+
+.pokerRoom img {
+	width: 123px;
+	height: 78px;
+	float: left;
+}
+
+.pokerRoom span {
+	width: 139px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 10px;
+	display: flex;
+	height: 78px;
+	align-items: center;
+	text-align: center;
+}
+
+.pokerRoom:hover {
+	background: linear-gradient(to top, #739a36 50%, #508104);
+}
+
+.pokerRoom:hover img {
+	display: none;
+}
+
+.pokerRoom:hover span {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	justify-content: center;
+}
+
+.PaySystem, .contact {
+	margin-top: 40px;
+}
+
+.contact {
+	margin-bottom: 40px;
+}
+
+.skype {
+	margin-top: 10px;
+	border: 1px solid #ebebeb;
+	min-height: 40px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.skype li {
+	padding-left: 19px;
+	min-height: 38px;
+	display: flex;
+	align-items: center;
+}
+
+.skype li i {
+	padding-right: 5px;
+	font-size: 23px;
+}
+
+.skype li span {
+	font-size: 16px;
+	font-family: 'Helvetica';
+	display: flex;
+	align-items: center;
+}
+
+.PaySystems {
+	margin-top: 10px;
+}
+
+.PaySystems li {
+	float: left;
+	width: 130px;
+	margin-left: 5px;
+	height: 80px;
+	border: 1px solid #ebebeb;
+	background: linear-gradient(to bottom, #FFFFFF, #ebebeb);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.PaySystems li a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 78px;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+}
+
+.PaySystems li a img {
+	vertical-align: middle;
+}
+
+.PaySystems li span {
+	background: linear-gradient(to top, #FFFFFF, #ebebeb);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	z-index: -1;
+	opacity: 0;
+	transition: color, 0.5s, linear, 0s;
+	-webkit-transition: color, 0.5s, linear, 0s;
+	-o-transition: color, 0.5s, linear, 0s;
+}
+
+.PaySystems li:nth-child(1) {
+	margin-left: 0;
+}
+
+.PaySystems li:hover .bgPay {
+	opacity: 1;
+	z-index: 1;
+}
+
+.curNews {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 180px;
+	width: 550px;
+	border: 1px solid #ebebeb;
+	margin-top: 10px;
+}
+
+.newsImg {
+	width: 175px;
+	height: 180px;
+	margin-top: -1px;
+	margin-left: -1px;
+	float: left;
+}
+
+.contentNews {
+	margin-left: 20px;
+	margin-top: 27px;
+	float: left;
+	width: 330px;
+}
+
+.contentNews > a {
+	margin-top: 15px;
+}
+
+.contentNews h3 {
+	font-family: 'Roboto';
+	max-width: 260px;
+	line-height: 20px;
+	font-weight: bold;
+	font-size: 16px;
+	color: #333333;
+}
+
+.contentNews ul li {
+	margin-left: 7px;
+	border-left: 1px solid #ebebeb;
+	padding-left: 7px;
+	float: left;
+}
+
+.contentNews ul li a {
+	color: #777777;
+	font-family: 'Roboto';
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.contentNews ul li:first-child {
+	margin-left: 0;
+	padding-left: 0;
+	border: none;
+}
+
+.shortText {
+	margin-top: 5px;
+	font-size: 14px;
+	font-family: 'Helvetica';
+	text-align: left;
+	line-height: 20px;
+}
+
+.paginationBlock {
+	text-align: center;
+	margin: 20px 0 50px;
+}
+
+.pagination {
+	display: inline-block;
+	font-family: 'Helvetica';
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.pagination li {
+	float: left;
+	margin-left: 24px;
+}
+
+.pagination li a {
+	color: #b9b9b9;
+	transition: color, 0.5s, linear, 0s;
+	-webkit-transition: color, 0.5s, linear, 0s;
+	-o-transition: color, 0.5s, linear, 0s;
+}
+
+.pagination li a:hover, .pagination li .active-pag {
+	color: #555555;
+}
+
+.pagination li:first-child {
+	margin-left: 0;
+}
+
+.pokerRoomObj.articleBlock {
+	max-height: 275px;
+}
+
+.pokerRoomObj {
+	width: 265px;
+	height: 480px;
+	float: left;
+	margin-left: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #ebebeb;
+	margin-bottom: 10px;
+	background: linear-gradient(to top, #FFFFFF 50%, #ebebeb);
+}
+
+.pokerRoomObj:nth-child(3n+1) {
+	margin-left: 0;
+}
+
+.pokerRoomObj:hover {
+	transition: all, 0.3s, linear, 0s;
+	-webkit-transition: all, 0.3s, linear, 0s;
+	-o-transition: all, 0.3s, linear, 0s;
+	box-shadow: 0 0 12px rgba(119, 119, 119, 0.3);
+	background: #FFFFFF;
+}
+
+.pokerRoomImg {
+	width: 265px;
+	height: 120px;
+	margin-left: -1px;
+	margin-top: -1px;
+	position: relative;
+}
+
+.pokerRoomImg h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	color: #fff;
+	transform: translate(-50%, -50%);
+	width: 70%;
+	text-align: center;
+	word-break: break-word;
+	max-height: 100px;
+	overflow: hidden;
+	line-height: 20px;
+}
+
+.pokerRoomContent {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.pokerRoomContent h2 {
+	display: block;
+	margin: 20px auto 15px;
+	max-width: 175px;
+	font-size: 16px;
+	line-height: 20px;
+	color: #555555;
+	text-transform: uppercase;
+}
+
+.pokerRoomContentText {
+	font-size: 16px;
+	text-align: left;
+	font-family: 'Roboto';
+	margin: 10px;
+	line-height: 20px;
+	height: 60px;
+	overflow: hidden;
+}
+
+.bonusOnDeposit, .reyback {
+	margin: 0 auto;
+	width: 225px;
+	height: 70px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #ebebeb;
+	background: linear-gradient(to bottom, #FFFFFF 50%, #ebebeb);
+}
+
+.bonusOnDeposit > span, .reyback > span {
+	font-family: 'Roboto';
+	font-style: italic;
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 20px;
+	width: 175px;
+	margin: 9px auto 0;
+	height: 20px;
+	background: #333333;
+	display: block;
+	position: relative;
+}
+
+.bonusOnDeposit > span:before, .reyback > span:before {
+	content: '';
+	position: absolute;
+	left: -30px;
+	top: 0;
+	border: 20px solid transparent;
+	border-right: 10px solid #333333;
+	border-bottom: 0 solid #333333;
+}
+
+.bonusOnDeposit > span:after, .reyback > span:after {
+	content: '';
+	position: absolute;
+	right: -30px;
+	top: 0;
+	border: 20px solid transparent;
+	border-left: 10px solid #333333;
+	border-top: 0 solid #333333;
+}
+
+.reyback {
+	margin-top: 10px;
+}
+
+.bonusContent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	color: #fdb913;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.bonusContent span {
+	font-size: 14px;
+	margin: 0 5px;
+}
+
+a.downloadPokerRoom {
+	width: 225px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: block;
+	margin: 20px auto 0;
+	background: linear-gradient(to bottom, #739a36 50%, #508104);
+	position: relative;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+a.downloadPokerRoom:hover {
+	background: linear-gradient(to top, #739a36 50%, #508104);
+}
+
+.downloadPokerRoom:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 40px solid transparent;
+	border-left: 10px solid #FFFFFF;
+	border-top: 0 solid #FFFFFF;
+}
+
+.downloadPokerRoom:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: 40px solid transparent;
+	border-right: 10px solid #FFFFFF;
+	border-bottom: 0 solid #FFFFFF;
+}
+
+.addInfo li {
+	float: left;
+}
+
+.addInfo li a {
+	font-size: 12px;
+	color: #777777;
+	line-height: 20px;
+	border-left: 1px solid #777777;
+	padding-left: 7px;
+	margin-left: 7px;
+}
+
+.addInfo li:first-child a {
+	border-left: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.curContent {
+	font-size: 16px;
+	color: #555555;
+	line-height: 20px;
+	margin-bottom: 50px;
+}
+
+.curContent.mb20 {
+	margin-bottom: 20px;
+}
+
+a.downloadPokerRoom.mb50 {
+	margin-bottom: 50px;
+}
+
+.fa-angle-right {
+	margin-left: 5px;
+}
+
+/*mozilla*/
+/*@-moz-document url-prefix() {
+  /!*.topMenuList:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 41px solid transparent;
+    border-left: 10px solid #FFFFFF;
+    border-top: 0px solid #FFFFFF;
+  }
+
+  .topMenuList:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 41px solid transparent;
+    border-right: 10px solid #555555;
+    border-bottom: 0px solid #555555;
+  }*!/
+
+  .article:before {
+    content: '';
+    position: absolute;
+    right: -40px;
+    top: 0;
+    border: 30px solid transparent;
+    border-left: 10px solid #ffcc4e;
+    border-top: 0px solid #ffcc4e;
+  }
+  .downloadPokerRoom:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 41px solid transparent;
+    border-left: 10px solid #FFFFFF;
+    border-top: 0 solid #FFFFFF;
+  }
+
+  .downloadPokerRoom:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 41px solid transparent;
+    border-right: 10px solid #FFFFFF;
+    border-bottom: 0 solid #FFFFFF;
+  }
+}*/
+/*Book 1024*/
+@media screen and (max-width: 1200px) {
+	/*.width1120 {
+		width: 1024px;
+	}
+*/
+	.leftCenterSideBar {
+		width: 777px;
+	}
+
+	.leftCenterSideBar h1 {
+		text-align: center;
+	}
+
+	.leftSideBar, .rightSideBar {
+		width: 237px;
+	}
+
+	.centerSideBar {
+		margin-left: 10px;
+		width: 530px;
+	}
+
+	.pokerRoom span {
+		width: 112px;
+	}
+
+	.curNews {
+		width: 530px;
+	}
+
+	.action, .pokerRoom {
+		width: 237px;
+	}
+
+	.action span {
+		width: 167px;
+		text-align: center;
+		display: inline-block;
+		margin-left: 0;
+	}
+
+	.PaySystem {
+		overflow: hidden;
+	}
+
+	.fa-angle-right {
+		margin-right: 10px;
+	}
+
+	.PaySystems li {
+		width: 116px;
+	}
+
+	.topMenuList {
+		width: 640px;
+		padding-right: 5px;
+	}
+
+	.topMenuList li a {
+		font-size: 12px;
+		padding: 0 3px;
+	}
+
+	.topMenuList li:first-child a {
+		padding-left: 16px;
+	}
+
+	.breacCrumb {
+		width: 895px;
+	}
+
+	.pokerRoomObj {
+		width: 247px;
+		margin-left: 15px;
+	}
+
+	.pokerRoomImg {
+		width: 247px;
+	}
+
+	.searchBox {
+		width: 245px;
+	}
+
+	.searchBox form a {
+		margin-left: 10px;
+	}
+
+	.searchBox form a:hover {
+		color: #ffffff;
+	}
+}
+
+/*@media screen and(width: 1024px) {
+  .topMenuList {
+    li:last-child {
+      display: none;
+    }
+  }
+}*/
+@media screen and (max-width: 1023px) {
+	.rightSideBar {
+		width: 236px;
+		margin-right: 10px;
+	}
+
+	.content.index {
+		margin-top: 20px;
+	}
+
+	.topMenu {
+		width: 100% !important;
+		left: 0;
+		top: 0;
+		background: gainsboro;
+		z-index: 1000;
+		position: fixed;
+	}
+
+	.leftSideBar {
+		display: none;
+	}
+
+	.centerSideBar {
+		width: 492px;
+		margin-left: 10px;
+	}
+
+	/*.width1120 {
+		width: 748px;
+	}*/
+	.curNews {
+		width: 492px;
+	}
+
+	.contentNews {
+		width: 280px;
+		margin-top: 15px;
+	}
+
+	.shortText {
+		margin-top: 0;
+		max-height: 60px;
+		overflow: hidden;
+	}
+
+	.action, .pokerRoom {
+		width: 236px;
+	}
+
+	.pokerRoom span {
+		width: 111px;
+	}
+
+	.searchBox form a {
+		margin-left: 10px;
+	}
+
+	.PaySystems li {
+		width: 115px;
+	}
+
+	.skype {
+		border-color: #508104;
+		color: #739a36;
+	}
+
+	.skype li {
+		padding: 0;
+		justify-content: center;
+	}
+
+	.searchBox form {
+		position: relative;
+	}
+
+	.searchBox form:after {
+		content: '';
+		position: absolute;
+		left: -50px;
+		top: 0;
+		border: 40px solid transparent;
+		border-right: 10px solid #555555;
+		border-bottom: 0px solid #555555;
+	}
+
+	header {
+		height: 40px;
+	}
+
+	.burger {
+		display: inline-block;
+		float: left;
+		cursor: pointer;
+		margin-left: 15px;
+		margin-right: 25px;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 35px;
+		height: 5px;
+		background-color: #333;
+		margin: 6px 0;
+		transition: 0.4s;
+	}
+
+	.change .bar2 {
+		opacity: 0;
+	}
+
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px);
+		transform: rotate(45deg) translate(-8px, -8px);
+	}
+
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-8px, 8px);
+		transform: rotate(-45deg) translate(-8px, 8px);
+	}
+
+	.breacCrumb {
+		width: 255px;
+	}
+
+	.searchBox {
+		width: 50%;
+	}
+
+	.searchBox form a {
+		float: right;
+		line-height: 40px;
+		margin-right: 5px;
+	}
+
+	.pokerRoomObj {
+		width: 236px;
+		margin-left: 20px;
+	}
+
+	.pokerRoomImg {
+		width: 236px;
+	}
+
+	.pokerRoomObj:nth-child(3n+1) {
+		margin-left: 20px;
+	}
+
+	a.aboutPokerRoom {
+		width: 220px;
+		height: 40px;
+		border: 1px solid #739a36;
+		margin: 10px auto 0;
+		line-height: 40px;
+	}
+
+	a.aboutPokerRoom .fa-angle-right {
+		margin-right: 0;
+	}
+
+	.pokerRoomObj:nth-child(2n+1) {
+		margin-left: 0;
+	}
+
+	.action span {
+		width: 166px;
+	}
+
+	.leftCenterSideBar {
+		width: 492px;
+	}
+
+	.breacCrumb {
+		display: none;
+	}
+
+	.actions > a, .pokerRooms > a {
+		margin-bottom: 15px;
+		width: 100%;
+		height: 40px;
+		border: 1px solid #739a36;
+		box-sizing: border-box;
+		line-height: 40px;
+		text-align: center;
+	}
+
+	.actions > a .fa-angle-right, .pokerRooms > a .fa-angle-right {
+		margin-right: 0;
+	}
+
+	.PaySystem, .contact {
+		margin-top: 15px;
+	}
+
+	.changeTML {
+		left: 0 !important;
+	}
+
+	.topMenuList {
+		position: absolute;
+		float: none;
+		left: -250px;
+		top: 100%;
+		width: 250px;
+		display: block;
+		/*li:last-child {
+			display: none;
+		}*/
+	}
+
+	.topMenuList li {
+		float: none;
+	}
+
+	.topMenuList li a {
+		padding-left: 16px;
+	}
+
+	.topMenuList:before, .topMenuList:after {
+		border: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.centerSideBar {
+		width: 100%;
+		margin: 0;
+		padding: 0 5px;
+		box-sizing: border-box;
+		float: none;
+	}
+
+	header {
+		height: 80px;
+	}
+
+	.searchBox {
+		width: 100%;
+	}
+
+	.newsImg {
+		display: none;
+	}
+
+	.footerLogo {
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+
+	.curNews {
+		width: 100%;
+	}
+
+	.Right {
+		padding-left: 10px;
+		margin-left: 10px;
+		max-width: 50%;
+		line-height: 16px;
+	}
+
+	.topMenuList {
+		top: 80px;
+	}
+
+	.topLogo {
+		float: right;
+		margin-right: 10px;
+	}
+
+	.curNews {
+		min-height: 180px;
+		height: auto;
+		clear: both;
+	}
+
+	.contentNews {
+		width: 100%;
+		padding-left: 20px;
+		box-sizing: border-box;
+		margin-left: 0;
+		float: none;
+		padding-bottom: 10px;
+	}
+
+	.contentNews > a {
+		width: 220px;
+		height: 40px;
+		border: 1px solid #739a36;
+		margin: 10px auto 0;
+		line-height: 40px;
+		text-align: center;
+	}
+
+	.contentNews > a .fa-angle-right {
+		margin-right: 0;
+	}
+
+	.pagination li:first-child {
+		padding: 10px;
+		display: block;
+		width: 100%;
+		float: none;
+		border: 1px solid #ebebeb;
+		margin: 0 auto 20px;
+	}
+
+	.pagination li:last-child {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		float: none;
+		border: 1px solid #ebebeb;
+		margin: 60px auto 0;
+	}
+
+	.rightSideBar, .leftCenterSideBar {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 5px;
+		float: none;
+	}
+
+	.action, .pokerRoom {
+		width: 100%;
+	}
+
+	.pokerRoom span {
+		width: 60%;
+		float: right;
+	}
+
+	.paginationBlock {
+		margin: 20px 0 15px;
+	}
+
+	.pokerRoomObj {
+		width: 100%;
+		margin-left: 0 !important;
+	}
+
+	.pokerRoomImg {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,470 @@
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+
+    .headerNavContainer {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .headerReg {
+        justify-content: space-between;
+    }
+
+    .headerReg ul {
+        width: 100%;
+    }
+
+    .ContentContainer {
+        width: 100%;
+        padding: 20px 20px;
+        margin: 0;
+    }
+
+    .ContentContainer div a .hideImg{
+        font-size: 14px;
+    }
+
+    .ContentContainer .button {
+        padding: 10px 0;
+    }
+
+    .footerContent {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .footerInfo {
+        text-align: center;
+    }
+
+    .footerInfo ul li {
+        width: 33.33%;
+        margin-bottom: 5px;
+    }
+
+    .footerMenu ul li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 568px) {
+    header {
+        background-position-x: 35%;
+    }
+
+    .headerNavMenu {
+        display: none;
+    }
+
+    .headerNavContainer {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .headerReg {
+        width: 100%;
+    }
+
+    .headerReg ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ContentContainer {
+        width: 100%;
+        padding: 20px 20px;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .ContentContainer div {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .ContentContainer div a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ContentContainer div a img {
+        width: 75%;
+    }
+
+    .ContentContainer div a .hideImg {
+        font-size: 14px;
+        width: 75%;
+        transform: translateX(17%);
+    }
+
+    .ContentContainer div a ul {
+        width: 100%;
+    }
+
+    .number span {
+        font-size: 28px;
+    }
+
+    .number span sub {
+        font-size: 24px;
+    }
+
+    button {
+        width: 175px;
+    }
+
+    .ContentContainer .button {
+        padding: 10px 0;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .footerContent {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        flex-flow: column wrap;
+    }
+
+    .footerInfo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footerInfo img,
+    .footerInfo p {
+        margin-bottom: 20px;
+    }
+
+    .footerInfo ul li {
+        width: 33.33%;
+        margin-bottom: 5px;
+    }
+
+    .footerMenu ul li a {
+        font-size: 16px;
+    }
+
+    i {
+        width: 75px;
+        height: 75px;
+    }
+
+    .footerMenu {
+        width: 100%;
+    }
+
+    /*                              BURGER                   */
+    .burger_mobile {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        display: block;
+        border: 1px solid red;
+        background: purple;
+        border-radius: 50%;
+    }
+
+    .burger_mobile span,
+    .burger_mobile span:before,
+    .burger_mobile span:after {
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: black;
+    }
+
+    .burger_mobile span:before {
+        content: '';
+        margin-top: -5px;
+    }
+
+    .burger_mobile span:after {
+        content: '';
+        margin-top: 5px;
+    }
+
+    .burger_mobile_active span {
+        background: transparent;
+    }
+
+    .burger_mobile_active span:before {
+        transform: rotate(135deg);
+        left: 0;
+        margin-top: 0;
+        transition: all 0.3s;
+    }
+
+    .burger_mobile_active span:after {
+        transform: rotate(-135deg);
+        left: 0;
+        margin-top: 0;
+        transition: all 0.3s;
+    }
+
+    .nav_mobile {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        display: flex;
+        transition: right 1.5s;
+        right: -100vw;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        opacity: .85;
+        flex-direction: column;
+    }
+
+    .nav_mobile_active {
+        right: 0;
+    }
+
+    .nav_mobile_active li {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .nav_mobile_active li a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: wheat;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 567px) and (min-width: 320px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 span {
+        display: none;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    header {
+        background-position-x: 35%;
+    }
+
+    .headerNavMenu {
+        display: none;
+    }
+
+    .headerNavContainer {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .headerReg {
+        width: 100%;
+    }
+
+    .headerReg ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ContentContainer {
+        width: 100%;
+        padding: 20px 20px;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .headerContentContainer {
+        width: 100%;
+    }
+
+    .headerContentContainer ul li {
+        font-size: 18px;
+    }
+
+    .ContentContainer div {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .ContentContainer div a .hideImg {
+        font-size: 14px;
+    }
+
+    .number span {
+        font-size: 21px;
+    }
+
+    .number span sub {
+        font-size: 24px;
+    }
+
+    button {
+        width: 175px;
+    }
+
+    .ContentContainer .button {
+        padding: 10px 0;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .footerContent {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        flex-flow: column wrap;
+    }
+
+    .footerInfo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footerInfo img,
+    .footerInfo p {
+        margin-bottom: 20px;
+    }
+
+    .footerInfo ul li {
+        width: 33.33%;
+        margin-bottom: 5px;
+    }
+
+    .footerMenu ul li a {
+        font-size: 16px;
+    }
+
+    i {
+        width: 75px;
+        height: 75px;
+    }
+
+    .footerMenu {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerMenu ul {
+        width: 100%;
+    }
+
+    .footerMenu ul li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footerMenu ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    /*                              BURGER                    */
+    .burger_mobile {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        display: block;
+        border: 1px solid red;
+        background: purple;
+        border-radius: 50%;
+    }
+
+    .burger_mobile span,
+    .burger_mobile span:before,
+    .burger_mobile span:after {
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: black;
+    }
+
+    .burger_mobile span:before {
+        content: '';
+        margin-top: -5px;
+    }
+
+    .burger_mobile span:after {
+        content: '';
+        margin-top: 5px;
+    }
+
+    .burger_mobile_active span {
+        background: transparent;
+    }
+
+    .burger_mobile_active span:before {
+        transform: rotate(135deg);
+        left: 0;
+        margin-top: 0;
+        transition: all 0.3s;
+    }
+
+    .burger_mobile_active span:after {
+        transform: rotate(-135deg);
+        left: 0;
+        margin-top: 0;
+        transition: all 0.3s;
+    }
+
+    .nav_mobile {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        display: flex;
+        transition: right 1.5s;
+        right: -100vw;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        opacity: .85;
+        flex-direction: column;
+    }
+
+    .nav_mobile_active {
+        right: 0;
+    }
+
+    .nav_mobile_active li {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .nav_mobile_active li a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: wheat;
+        text-transform: uppercase;
+    }
+}
+
+

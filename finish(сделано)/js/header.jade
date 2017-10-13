@@ -1,0 +1,304 @@
+//
+        Created by notebook on 01.11.2016.
+
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title rautagrooup
+        link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(href="https://fonts.googleapis.com/css?family=Roboto:400,700,900i" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet")
+        link(type="text/css" rel="stylesheet" href="owl-carousel/owl.carousel.css")
+        link(type="text/css" rel="stylesheet" href="owl-carousel/owl.theme.css")
+        link(type="text/css" rel="stylesheet" href="css/style.css")
+    body
+        header
+            div.topMenu
+                div.width1100
+                    a(href='index.html')
+                        img(src="img/logo.svg" title='img' alt='logo')
+                    div.rigthBar.clearfix
+                        div
+                            //-i.fa.fa-phone(aria-hidden="true")
+
+                            div.mr25
+                                img(src='img/phone.png' alt='phone')
+                                ul.city
+                                    li Киев
+                                    li Днепр
+                                    li Одесса
+                                    li Харьков
+                                    li Ровно
+                                span
+                                    span.town Киев
+                                    i.fa.fa-caret-right(aria-hidden="true")
+                                span#numbers +38  044 364 85 73
+
+                            //-i.fa.fa-envelope-o(aria-hidden="true")
+                            div.mail
+
+                                span.mailTo
+                                    img(src='img/email.png' alt='email')
+                                    span info@rautagroup.com
+
+                        ul.language
+                            li.activeLang РУС
+                            li УКР
+                            li ENG
+                            i.fa.fa-caret-down(aria-hidden="true")
+                            ul.lang
+                                li РУС
+                                li УКР
+                                li ENG
+
+                        div.posRel
+                            div.openSearch
+                                i.fa.fa-search(aria-hidden="true")
+                            form.search
+                                input(type='text' )
+                                button
+                                    i.fa.fa-search(aria-hidden="true")
+                        div.nav
+                            i.fa.fa-bars(aria-hidden="true")
+            div.fixedMenu.clearfix
+                div.width1100
+                    ul.mainMenu.clearfix
+                        li
+                            a О КОМПАНИИ
+                                i.fa.fa-caret-down(aria-hidden="true")
+                            ul.subMenu
+                                li
+                                    a(href='aboutCompany.html') Компания сегодня
+                                li
+                                    a(href='#') Миссия и ценности
+                                li
+                                    a(href='#') Карьера
+                        li
+                            a ИНФОЦЕНТР
+                                i.fa.fa-caret-down(aria-hidden="true")
+                            ul.subMenu
+                                li
+                                    a(href='news.html') Новости
+                                li
+                                    a(href='catalog.html') Каталог
+                                li
+                                    a(href='#') Презентации
+                        li
+                            a ПРОДУКЦИЯ
+                                i.fa.fa-caret-down(aria-hidden="true")
+                            ul.subMenu
+                                li
+                                    a(href='product2lvl.html') Сэндвич-панели
+                                li
+                                    a(href='product1lvl.html') Фасады
+                                li
+                                    a(href='#') Несущие профили
+                                li
+                                    a(href='#') Каркасы
+                                li
+                                    a(href='#') Полнокомплектные здания
+                        li
+                            a УСЛУГИ
+                                i.fa.fa-caret-down(aria-hidden="true")
+                            ul.subMenu
+                                li
+                                    a(href='#') Проектирование
+                                li
+                                    a(href='#') Поставка
+                                li
+                                    a(href='#') Монтаж
+                                li
+                                    a(href='#') Сервис
+                        li
+                            a ПОРТФОЛИО
+                                i.fa.fa-caret-down(aria-hidden="true")
+                            ul.subMenu
+                                li
+                                    a(href='portfolioCaruP.html') Автосалоны, Заправки, СТО
+                                li
+                                    a(href='portfolioCaruP.html') Аграрные объекты
+                                li
+                                    a(href='portfolioCaruP.html') Жилая недвижимость
+                                li
+                                    a(href='portfolioCaruP.html') Складские комплексы
+                                li
+                                    a(href='portfolioCaruP.html') Административно-офисная недвижимость
+                                li
+                                    a(href='portfolioCaruP.html') Производственные здания
+                                li
+                                    a(href='portfolioCaruP.html') Спортивные сооружения
+                                li
+                                    a(href='portfolioCaruP.html') Торгово-развлекательные центры
+                                li
+                                    a(href='portfolioCaruP.html') Другое
+                        li
+                            a(href="contact.html") КОНТАКТЫ
+
+        block content
+        div#overflow
+        div.mailForm
+            form
+                input(type='text' placeholder='Имя')
+                input(type='Email' placeholder='E-mail')
+                input(type='tel' placeholder='Телефон')
+                textarea(placeholder='Сообщение')
+                label(for='sender').send
+                    | ОТПРАВИТЬ
+                    i.fa.fa-caret-right(aria-hidden="true")
+                    input(type='submit' value='ОТПРАВИТЬ' id='sender')
+        footer
+            div.fotterTop.width1100.clearfix
+                div.location
+                    | 04665 Украина, г. Киев,
+                    | ул. Старокиевская 10Г
+                    | БЦ Вектор
+                div.Fcont
+                    div.Fphone
+                        | +38 044 364 85 73
+                    div.Femail
+                        | info@rautagroup.com
+
+
+            div.width1100.clearfix
+                div.copy
+                    | Copyright © 2016 Rauta все права защищены
+                ul.copy2
+                    li
+                        a(href='condition.html')
+                            img(src='img/rule.png')
+                            | ПРАВИЛА ИСПОЛЬЗОВАНИЯ САЙТА
+                    li
+                        a(href='#')
+                            span &reg;
+                            | ТОРГОВАЯ МАРКА
+                    li
+                        a(href='#')
+                            img(src='img/map.png')
+                            | КАРТА САЙТА
+
+
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
+        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN6cRDXoteR0yKsUwXNz8rGGRV2fWOkj4&sensor=false")
+        script.
+            //=======================================
+            //GOOGLE MAP
+            //=======================================
+
+            function init_map() {
+                var myLocation = new google.maps.LatLng(48.379433, 31.16558);
+                //city
+                var Kyiv = new google.maps.LatLng(50.4501, 30.5234);
+                var Dnipro = new google.maps.LatLng(48.464717, 35.046183);
+                var Odessa = new google.maps.LatLng(46.482526, 30.7233095);
+                var Charkiw = new google.maps.LatLng(49.9935, 36.230383);
+                var Rivne = new google.maps.LatLng(50.6199, 26.251617);
+
+                var draggableValue;
+                if ($(document).width() <= 768) {
+                    draggableValue = false;
+                    //This option is used for disabling drag.
+                }
+                else {
+                    draggableValue = true;
+                    /*This option is used for disabling drag.*/
+                }
+
+                var mapOptions = {
+                    generate_controls: false,
+                    center: myLocation,
+                    zoom: 6,
+                    mapTypeControl: true, /*This option will hide map type.*/
+                    draggable: true,
+                    scaleControl: false,            //This option is used for disable zoom by scale.
+                    scrollwheel: false, /*This option is used for disable zoom on mouse.*/
+                    navigationControl: true,
+                    zoomControlOptions: {
+                        style: google.maps.ZoomControlStyle.SMALL,
+                    },
+                    /*styles: [{"stylers": [{"saturation": -100}]}],*/
+                    streetViewControl: true
+                };
+                var map = new google.maps.Map(document.getElementById("map"),
+                        mapOptions);
+
+
+                var KievID = '<div id="Kiev">Тут всё то про что должно быть рассказано о Киеве</div>';
+                var infowindowKievID = new google.maps.InfoWindow({content: KievID});
+
+                var marker = new google.maps.Marker({
+                    position: Kyiv,
+                    map: map,
+                    title: 'Киев'
+                });
+
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindowKievID.open(map, marker);
+                });
+
+                var DniproID = '<div id="Dnipro">Тут всё то про что должно быть рассказано о ДНЕПРЕ</div>';
+                var infowindowDniproID = new google.maps.InfoWindow({
+                    content: DniproID
+                });
+                var marker2 = new google.maps.Marker({
+                    position: Dnipro,
+                    map: map,
+                    title: 'Днипро'
+                });
+
+                google.maps.event.addListener(marker2, 'click', function () {
+                    infowindowDniproID.open(map, marker2);
+                });
+
+                var OdessaID = '<div id="Odessa">Тут всё то про что должно быть рассказано о ОДЕСЕ</div>';
+                var infowindow = new google.maps.InfoWindow({content: OdessaID});
+
+                var marker3 = new google.maps.Marker({
+                    position: Odessa,
+                    map: map,
+                    title: 'Одеса'
+                });
+
+                google.maps.event.addListener(marker3, 'click', function () {
+                    infowindow.open(map, marker3);
+                });
+
+
+                var CharkiwID = '<div id="Charkiw">Тут всё то про что должно быть рассказано о ХАРЬКОВЕ</div>';
+                var infowindowCharkiwID = new google.maps.InfoWindow({content: CharkiwID});
+
+                var marker4 = new google.maps.Marker({
+                    position: Charkiw,
+                    map: map,
+                    title: 'Харьков'
+                });
+
+                google.maps.event.addListener(marker4, 'click', function () {
+                    infowindowCharkiwID.open(map, marker4);
+                });
+
+
+                var RivneID = '<div id="Rivne">Тут всё то про что должно быть рассказано о РОВНО</div>';
+                var infowindowRivneID = new google.maps.InfoWindow({
+                    content: RivneID
+                });
+
+                var marker5 = new google.maps.Marker({
+                    position: Rivne,
+                    map: map,
+                    title: 'Ровно'
+                });
+
+                google.maps.event.addListener(marker5, 'click', function () {
+                    infowindowRivneID.open(map, marker5);
+                });
+
+            }
+
+            google.maps.event.addDomListener(window, 'load', init_map);
+        script(type="text/javascript" src="owl-carousel/owl.carousel.js")
+        script(type="text/javascript" src="js/js.js")
+        //-script(type="text/javascript" src="js/snow-fall.js")

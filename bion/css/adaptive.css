@@ -1,0 +1,702 @@
+@media screen and (max-width: 567px) and (min-width: 320px) {
+    .header_menu_mobile {
+        display: block;
+    }
+
+    header {
+        background-position-x: 45%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .HeaderMenu {
+        max-height: none;
+        height: auto;
+        margin: 0;
+    }
+
+    .HeaderLogo {
+        float: none;
+        margin-top: 100px;
+    }
+
+    .HeaderLogo img {
+        width: 200px;
+        height: auto;
+    }
+
+    .TopMenu {
+        display: none;
+    }
+
+    .top_button {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 12px 5px;
+    }
+
+    .HeaderInfo h1 {
+        text-align: center;
+        padding-left: 0;
+        padding-top: 33px;
+    }
+
+    #BionCounters {
+        max-height: none;
+    }
+
+    #BionCounters ul {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #BionCounters ul li {
+        width: auto;
+        justify-content: flex-start;
+        height: 80px;
+        border-right: none;
+    }
+
+    .CountersCOntainer {
+        width: 100%;
+        flex-flow: column wrap;
+        height: 100%;
+        align-items: center;
+    }
+
+    #BionCounters ul li h1 {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        line-height: normal;
+        font-size: 36px;
+    }
+
+    #BionCounters div {
+        width: 100%;
+        text-align: center;
+    }
+
+    #BionCounters ul li span {
+        line-height: normal;
+        float: none;
+        margin: 0;
+    }
+
+    #BionCounters ul li a {
+        max-width: none;
+    }
+
+    #Advantages {
+        height: auto;
+        padding-top: 24px;
+    }
+
+    #Advantages h1 {
+        padding-left: 0;
+        margin-bottom: 21px;
+    }
+
+    .AdvantagesContainer {
+        flex-flow: column;
+        margin-bottom: 20px;
+    }
+
+    .AdvantagesContainer ul:first-child,
+    .AdvantagesContainer ul:last-child {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #Advantages ul {
+        width: 100%;
+    }
+
+    #Advantages ul li {
+        height: auto;
+        width: 95%;
+        display: block;
+        box-sizing: border-box;
+        background: #ffffff;
+        float: left;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 13px;
+    }
+
+    #Advantages ul li a:before {
+        background: none;
+    }
+
+    #Advantages ul li a:hover:before {
+        background: none;
+    }
+
+    #Advantages ul li a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        font-size: 14px;
+        color: #000000;
+        padding: 14px 0;
+        text-align: start;
+    }
+
+    #Advantages ul li a span {
+        padding-left: 5px;
+        margin-right: 10px;
+    }
+
+    #Advantages > a {
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    #BionDiscounts {
+        padding: 30px 0;
+        background-position-y: -150%;
+    }
+
+    #BionDiscounts h1 {
+        padding: 0;
+    }
+
+    #BionDiscounts p {
+        padding: 0;
+    }
+
+    #BionDiscounts ul {
+        margin-left: 0;
+    }
+
+    #BionDiscounts ul li span {
+        font-size: 40px;
+    }
+
+    #BionDiscounts > a {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #News {
+        padding: 30px 0;
+        height: auto;
+    }
+
+    .NewsContainer {
+        max-width: none;
+        margin-left: 0;
+    }
+
+    .NewsRow {
+        width: 100%;
+    }
+
+    .NewsRowLeft {
+        width: auto;
+        padding: 0 10px;
+        margin-right: 0;
+    }
+
+    .NewsRowLeft p {
+        font-size: 26px;
+    }
+
+    .NewsRowRight {
+        width: 100%;
+        height: 100%;
+    }
+
+    .NewsRowRight a {
+        text-align: center;
+        line-height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .NewsRowRight a:before {
+        background: none;
+    }
+
+    .NewsRowRight a:hover:before {
+        background: none;
+    }
+
+    #BIONform {
+        height: 100%;
+        width: 100%;
+        background: url(../img/back.png) no-repeat 60% 125px;
+        display: block;
+    }
+
+    #BIONform .FormContainer {
+        float: none;
+        margin-left: 0;
+        padding-top: 30px;
+    }
+
+    .FormContainer h1 {
+        font-size: 30px;
+        margin-bottom: 35px;
+        color: black;
+    }
+
+    input[type='text'] {
+        margin-right: 0;
+        background-position-x: 2%;
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    input[type="button"] {
+        width: 100%;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .footerContainer {
+        flex-flow: column wrap;
+    }
+
+    footer h1 {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .footerContainer div {
+        float: none;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    footer ul li {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    footer p {
+        float: left;
+    }
+
+    footer img {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 568px) {
+    .header_menu_mobile {
+        display: block;
+    }
+
+    header {
+        background-position-x: 45%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .HeaderMenu {
+        max-height: none;
+        height: auto;
+        margin: 0;
+    }
+
+    .HeaderLogo {
+        float: none;
+        margin-top: 100px;
+    }
+
+    .HeaderLogo img {
+        width: 200px;
+        height: auto;
+    }
+
+    .TopMenu {
+        display: none;
+    }
+
+    .top_button {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 12px 5px;
+    }
+
+    .HeaderInfo h1 {
+        text-align: center;
+        padding-left: 0;
+        padding-top: 33px;
+    }
+
+    #BionCounters {
+        max-height: none;
+    }
+
+    #BionCounters ul {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #BionCounters ul li {
+        width: auto;
+        justify-content: flex-start;
+        height: 80px;
+        border-right: none;
+    }
+
+    .CountersCOntainer {
+        width: 100%;
+        flex-flow: column wrap;
+        height: 100%;
+        align-items: center;
+    }
+
+    #BionCounters ul li h1 {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        line-height: normal;
+        font-size: 36px;
+    }
+
+    #BionCounters div {
+        width: 100%;
+        text-align: center;
+    }
+
+    #BionCounters ul li span {
+        line-height: normal;
+        float: none;
+        margin: 0;
+    }
+
+    #BionCounters ul li a {
+        max-width: none;
+    }
+
+    #Advantages {
+        height: auto;
+        padding-top: 24px;
+    }
+
+    #Advantages h1 {
+        padding-left: 0;
+        margin-bottom: 21px;
+    }
+
+    .AdvantagesContainer {
+        flex-flow: column;
+        margin-bottom: 20px;
+    }
+
+    .AdvantagesContainer ul:first-child,
+    .AdvantagesContainer ul:last-child {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #Advantages ul {
+        width: 100%;
+    }
+
+    #Advantages ul li {
+        height: auto;
+        width: 95%;
+        display: block;
+        box-sizing: border-box;
+        background: #ffffff;
+        float: left;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 13px;
+    }
+
+    #Advantages ul li a:before {
+        background: none;
+    }
+
+    #Advantages ul li a:hover:before {
+        background: none;
+    }
+
+    #Advantages ul li a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        font-size: 14px;
+        color: #000000;
+        padding: 14px 0;
+        text-align: start;
+    }
+
+    #Advantages ul li a span {
+        padding-left: 5px;
+        margin-right: 10px;
+    }
+
+    #Advantages > a {
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    #BionDiscounts {
+        padding: 30px 0;
+        background-position-y: -150%;
+    }
+
+    #BionDiscounts h1 {
+        padding: 0;
+    }
+
+    #BionDiscounts p {
+        padding: 0;
+    }
+
+    #BionDiscounts ul {
+        margin-left: 0;
+    }
+
+    #BionDiscounts ul li span {
+        font-size: 40px;
+    }
+
+    #BionDiscounts > a {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #News {
+        padding: 30px 0;
+        height: auto;
+    }
+
+    .NewsContainer {
+        max-width: none;
+        margin-left: 0;
+    }
+
+    .NewsRow {
+        width: 100%;
+    }
+
+    .NewsRowLeft {
+        width: auto;
+        padding: 0 10px;
+        margin-right: 0;
+    }
+
+    .NewsRowLeft p {
+        font-size: 26px;
+    }
+
+    .NewsRowRight {
+        width: 100%;
+        height: 100%;
+    }
+
+    .NewsRowRight a {
+        text-align: center;
+        line-height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .NewsRowRight a:before {
+        background: none;
+    }
+
+    .NewsRowRight a:hover:before {
+        background: none;
+    }
+
+    #BIONform {
+        height: 100%;
+        width: 100%;
+        background: url(../img/back.png) no-repeat 60% 125px;
+        display: block;
+    }
+
+    #BIONform .FormContainer {
+        float: none;
+        margin-left: 0;
+        padding-top: 30px;
+    }
+
+    .FormContainer h1 {
+        font-size: 30px;
+        margin-bottom: 35px;
+        color: black;
+    }
+
+    input[type='text'] {
+        margin-right: 0;
+        background-position-x: 2%;
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    input[type="button"] {
+        width: 100%;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .footerContainer {
+        flex-flow: column wrap;
+    }
+
+    footer h1 {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .footerContainer div {
+        float: none;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    footer ul li {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    footer p {
+        float: left;
+    }
+
+    footer img {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .HeaderMenu {
+        max-height: 60px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .TopMenu {
+        max-width: none;
+        margin-right: 15px;
+    }
+
+    .TopMenu li a {
+        font-size: 12px;
+    }
+
+    .TopMenu li:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .top_button {
+        margin-left: 0;
+    }
+
+    .AdvantagesContainer ul:first-child {
+        padding-left: 0;
+    }
+
+    .AdvantagesContainer ul:last-child {
+        padding-right: 0;
+    }
+
+    #Advantages > a {
+        width: auto;
+        margin-left: 0;
+    }
+
+    #BionDiscounts > a {
+        width: auto;
+        margin-left: 0;
+    }
+
+    #Advantages ul li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #Advantages ul li a {
+        padding-right: 60px;
+    }
+
+    .NewsContainer {
+        margin-left: 0;
+    }
+
+    #BIONform .FormContainer {
+        float: none;
+        margin-left: 0;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .FormContainer h1 {
+        color: black;
+    }
+
+    .footerContainer {
+        padding: 60px 0;
+    }
+
+}
+
+@media screen and (max-width: 1110px) and (min-width: 1024px) {
+    .top_button {
+        margin-left: 0;
+    }
+
+    .HeaderLogo {
+        margin: 15px 15px 0 21px;
+    }
+
+    .TopMenu {
+        height: 80%;
+        margin-right: 15px;
+    }
+
+    .TopMenu li:nth-child(1) {
+        margin-left: 10%;
+    }
+
+    .FormContainer h1 {
+        color: black;
+    }
+
+    #BIONform .FormContainer {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        float: none;
+        margin-left: 0;
+    }
+}
