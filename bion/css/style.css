@@ -1,12 +1,13 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500');
-
+a{
+    text-decoration: none;
+}
 .clean {
     clear: both;
 }
 
 html {
-    max-width: 1280px;
     box-sizing: border-box;
 }
 
@@ -22,6 +23,7 @@ header {
     width: 100%;
     height: 660px;
     background: url("../img/BackHeader.png") no-repeat;
+    background-size: cover;
 }
 
 .HeaderMenu {
@@ -213,6 +215,7 @@ Advantage
     height: 639px;
     background: url(../img/BackAdvangates.png) no-repeat;
     padding-top: 65px;
+    background-size: cover;
 }
 
 #Advantages h1 {
@@ -339,6 +342,7 @@ DISCOUNT
     padding: 63px 0;
     background: url(../img/Discounse.png) no-repeat;
     display: block;
+    background-size: cover;
 }
 
 #BionDiscounts h1 {
@@ -415,6 +419,7 @@ NEWS
     justify-content: center;
     background: url(../img/News.png) no-repeat;
     padding-top: 58px;
+    background-size: cover;
 }
 
 .NewsContainer {
