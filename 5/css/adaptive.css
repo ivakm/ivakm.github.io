@@ -113,6 +113,10 @@
     button {
         width: 175px;
     }
+    
+    .project button{
+        font-size: 14px;
+    }
 
     .ContentContainer .button {
         padding: 10px 0;
