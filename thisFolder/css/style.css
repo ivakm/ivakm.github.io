@@ -125,7 +125,7 @@ html {
   justify-content: space-around;
   align-items: flex-start;
   flex-flow: column wrap;
-  height: 100vh; }
+  }
 
 #content h1 {
   text-transform: uppercase;
